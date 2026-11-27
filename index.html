@@ -120,13 +120,16 @@ footer{padding:2.5rem 0 0;color:var(--muted);font-size:.9rem}
   <main>
     <section id="log" aria-labelledby="log-h">
       <h2 id="log-h">Flight log</h2>
-      <p class="sub">Events I've hosted, pitched at, styled and promoted at KMCT Group of Institutions.</p>
+      <p class="sub">Events I've anchored, organised, pitched at and promoted at KMCT Group of Institutions.</p>
       <div class="board" role="list">
-        <div class="brow win" role="listitem"><span class="ev">Converge '26</span><span class="what">Reverse Pitch Competition. I presented a Proactive Workplace Engagement Framework to a panel of industry experts.</span><span class="st">2nd place</span></div>
-        <div class="brow" role="listitem"><span class="ev">CMA Program</span><span class="what">I hosted the event and coordinated its proceedings as anchor.</span><span class="st">Anchored</span></div>
+        <div class="brow win" role="listitem"><span class="ev">Converge '26</span><span class="what">Reverse Pitch Competition. I developed a Proactive Workplace Engagement Framework and presented it to a panel of industry experts.</span><span class="st">2nd place</span></div>
+        <div class="brow" role="listitem"><span class="ev">TEDxKMCT S2</span><span class="what">I anchored the event on October 31 and served as a student organiser, supporting planning, coordination and on-ground execution.</span><span class="st">Anchor + organiser</span></div>
+        <div class="brow" role="listitem"><span class="ev">Confluence KMCT</span><span class="what">I anchored the Annual Research Conference for an audience of academicians, researchers and students.</span><span class="st">Anchored</span></div>
+        <div class="brow" role="listitem"><span class="ev">Speak for India</span><span class="what">I advanced to the zonal round of the public speaking platform.</span><span class="st">Zonal qualifier</span></div>
+        <div class="brow" role="listitem"><span class="ev">CMA Program</span><span class="what">I hosted the event and coordinated its proceedings.</span><span class="st">Anchored</span></div>
         <div class="brow" role="listitem"><span class="ev">KMCT Group</span><span class="what">Advertisements and promotional videos for the official social media pages, building a strong brand image.</span><span class="st">Created</span></div>
-        <div class="brow" role="listitem"><span class="ev">Event styling</span><span class="what">Decoration and styling for institutional programs and functions.</span><span class="st">Recognised</span></div>
-        <div class="brow" role="listitem"><span class="ev">Converge '25</span><span class="what">Industry-Academia Conclave hosted by KMCT GI, with industry professionals and academic leaders.</span><span class="st">Attended</span></div>
+        <div class="brow" role="listitem"><span class="ev">Event styling</span><span class="what">Creative decoration and styling for institutional programs and functions.</span><span class="st">Applied</span></div>
+        <div class="brow" role="listitem"><span class="ev">Converge '25 + '26</span><span class="what">Industry-Academia Conclaves hosted by KMCT GI, with industry professionals and academic leaders.</span><span class="st">Attended</span></div>
       </div>
     </section>
 
@@ -135,9 +138,10 @@ footer{padding:2.5rem 0 0;color:var(--muted);font-size:.9rem}
       <p class="sub">What I bring on every trip.</p>
       <div class="tags">
         <div class="tag"><h3>Communication</h3><p>Excellent verbal and written skills.</p></div>
-        <div class="tag"><h3>Public speaking</h3><p>Anchoring and hosting live programs.</p></div>
-        <div class="tag"><h3>Event management</h3><p>Decoration and coordination.</p></div>
+        <div class="tag"><h3>Public speaking</h3><p>Anchored TEDxKMCT Season 2, Confluence KMCT and the CMA Program.</p></div>
+        <div class="tag"><h3>Event management</h3><p>Student organiser for TEDxKMCT Season 2, plus decoration and styling.</p></div>
         <div class="tag"><h3>Social media</h3><p>Promotional content and ad videos.</p></div>
+        <div class="tag"><h3>Problem solving</h3><p>Developed and pitched a framework to industry experts.</p></div>
       </div>
     </section>
 
@@ -175,6 +179,94 @@ footer{padding:2.5rem 0 0;color:var(--muted);font-size:.9rem}
   window.addEventListener('scroll',fly,{passive:true});
   window.addEventListener('resize',fly);
   fly();
+})();
+</script>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="pl" viewBox="0 0 24 24"><path fill="currentColor" d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></symbol></svg>
+
+<div class="fly" id="fly" aria-hidden="true">
+  <div class="orbit">
+    <i class="mini" style="--a:0deg"><svg viewBox="0 0 24 24"><use href="#pl"/></svg></i>
+    <i class="mini" style="--a:120deg"><svg viewBox="0 0 24 24"><use href="#pl"/></svg></i>
+    <i class="mini" style="--a:240deg"><svg viewBox="0 0 24 24"><use href="#pl"/></svg></i>
+  </div>
+  <div class="core" id="core"><svg viewBox="0 0 24 24"><use href="#pl"/></svg></div>
+</div>
+
+<nav class="dock" aria-label="Sections">
+  <a href="#log">Log</a><a href="#carry-on">Skills</a><a href="#announcements">Languages</a><a href="#contact">Contact</a>
+</nav>
+
+<style>
+.fly{position:fixed;left:0;top:0;width:0;height:0;z-index:50;pointer-events:none;opacity:0;transition:opacity .4s;will-change:transform}
+.fly.on{opacity:1}
+.fly svg{width:100%;height:100%;display:block;filter:drop-shadow(0 0 1px #0C1A3A) drop-shadow(0 2px 3px rgba(12,26,58,.35))}
+.core{position:absolute;width:2.4rem;height:2.4rem;margin:-1.2rem 0 0 -1.2rem;color:var(--amber);transition:scale .25s}
+.fly.big .core{scale:1.35}
+.orbit{position:absolute;left:0;top:0;animation:spin 5s linear infinite}
+.mini{position:absolute;width:.95rem;height:.95rem;margin:-.475rem 0 0 -.475rem;color:var(--amber);opacity:.9;transform:rotate(var(--a)) translateY(-2.5rem);transition:transform .3s}
+.fly.big .mini{transform:rotate(var(--a)) translateY(-3.4rem)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.dock{display:none}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(max-width:45.99rem){
+  body{font-size:1rem}
+  .wrap{padding:1rem 1rem 6.5rem 2.5rem}
+  .route{left:1rem}
+  .plane{left:.05rem;width:1.9rem;height:1.9rem}
+  section{padding-top:2.6rem}
+  h1{font-size:clamp(2rem,9.5vw,2.6rem)}
+  .pass .main{padding:1.3rem 1.2rem}
+  .legs{grid-template-columns:1fr;gap:.35rem}
+  .legs .arrow{transform:rotate(90deg);justify-self:start;line-height:1}
+  .facts{gap:1rem}
+  .brow{padding:.9rem 0}
+  .btn{display:block;text-align:center}
+  .checkin .alt{display:block;margin:1rem 0 0;text-align:center;padding:.6rem}
+  .core{width:2.1rem;height:2.1rem;margin:-1.05rem 0 0 -1.05rem}
+  .dock{display:flex;position:fixed;left:50%;transform:translateX(-50%);bottom:calc(.75rem + env(safe-area-inset-bottom,0px));z-index:60;gap:.15rem;padding:.3rem;background:var(--navy);border-radius:2rem;box-shadow:0 12px 30px -10px rgba(0,0,0,.6)}
+  .dock a{color:var(--onnavy);text-decoration:none;font-size:.85rem;font-weight:500;padding:0 .8rem;min-height:2.75rem;display:flex;align-items:center;border-radius:2rem}
+  .dock a[aria-current="true"]{background:var(--amber);color:var(--navy)}
+}
+@media(prefers-reduced-motion:reduce){.orbit{animation:none}.js .rv{transition:none}}
+</style>
+
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)}, fly=$('fly'), core=$('core');
+  var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var x=innerWidth/2,y=innerHeight/2,tx=x,ty=y,heading=0,last=0,touchy=false,inter=false,t0=performance.now();
+  function set(px,py,touch){tx=px;ty=py;inter=true;touchy=touch;last=performance.now();}
+  addEventListener('pointermove',function(e){set(e.clientX,e.clientY,e.pointerType==='touch')},{passive:true});
+  addEventListener('pointerdown',function(e){set(e.clientX,e.clientY,e.pointerType==='touch')},{passive:true});
+  addEventListener('touchmove',function(e){var t=e.touches[0];if(t)set(t.clientX,t.clientY,true)},{passive:true});
+  addEventListener('pointerover',function(e){fly.classList.toggle('big',!!(e.target.closest&&e.target.closest('a,.brow,.tag')))});
+  function loop(now){
+    if(!rm&&(!inter||(touchy&&now-last>2500))){
+      var t=(now-t0)/1000;
+      tx=innerWidth*(.5+.32*Math.cos(t*.7));ty=innerHeight*(.45+.25*Math.sin(t*1.4));
+    }
+    var dx=tx-x,dy=ty-y;x+=dx*.1;y+=dy*.1;
+    if(Math.abs(dx)+Math.abs(dy)>2){
+      var h=Math.atan2(dy,dx)*180/Math.PI+90, d=((h-heading+540)%360)-180; heading+=d*.15;
+    }
+    fly.style.transform='translate3d('+x+'px,'+y+'px,0)';
+    core.firstElementChild.style.transform='rotate('+heading+'deg)';
+    requestAnimationFrame(loop);
+  }
+  fly.classList.add('on');requestAnimationFrame(loop);
+
+  var secs=[].slice.call(document.querySelectorAll('main section'));
+  if(!('IntersectionObserver' in window)){return;}
+  document.documentElement.classList.add('js');
+  secs.forEach(function(s){s.classList.add('rv')});
+  var rev=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');rev.unobserve(e.target)}})},{threshold:.1});
+  secs.forEach(function(s){rev.observe(s)});
+  var links=[].slice.call(document.querySelectorAll('.dock a'));
+  var act=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){links.forEach(function(a){a.setAttribute('aria-current',a.getAttribute('href')==='#'+e.target.id)})}
+  })},{rootMargin:'-45% 0px -50% 0px'});
+  secs.forEach(function(s){act.observe(s)});
 })();
 </script>
 </body>
